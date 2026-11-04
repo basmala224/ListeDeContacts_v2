@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/racine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fond"
+    android:orientation="vertical"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/entete"
+        style="@style/TitreEntete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titre_detail" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgPhoto"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fond_photo"
+                android:contentDescription="@string/desc_photo"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/avatar_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGalerie"
+                    style="@style/BoutonPlein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_galerie" />
+
+                <Button
+                    android:id="@+id/btnCamera"
+                    style="@style/BoutonPlein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:text="@string/btn_camera" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/LibelleChamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etNom"
+                android:text="@string/label_nom" />
+
+            <EditText
+                android:id="@+id/etNom"
+                style="@style/ChampSaisie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapWords" />
+
+            <TextView
+                style="@style/LibelleChamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etPrenom"
+                android:text="@string/label_prenom" />
+
+            <EditText
+                android:id="@+id/etPrenom"
+                style="@style/ChampSaisie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName|textCapWords" />
+
+            <TextView
+                style="@style/LibelleChamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etTelephone"
+                android:text="@string/label_telephone" />
+
+            <EditText
+                android:id="@+id/etTelephone"
+                style="@style/ChampSaisie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+
+            <TextView
+                style="@style/LibelleChamp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:labelFor="@+id/etEmail"
+                android:text="@string/label_email" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                style="@style/ChampSaisie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnAppeler"
+                    style="@style/BoutonPlein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/vert"
+                    android:text="@string/btn_appeler" />
+
+                <Button
+                    android:id="@+id/btnEmail"
+                    style="@style/BoutonPlein"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/bleu"
+                    android:text="@string/btn_email" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnEnregistrer"
+                style="@style/BoutonPlein"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/btn_enregistrer" />
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                style="@style/BoutonContour"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/btn_annuler" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

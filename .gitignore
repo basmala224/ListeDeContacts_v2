@@ -1,0 +1,11 @@
+# Répertoires de compilation et fichiers propres à chaque ordinateur
+build/
+.gradle/
+local.properties
+.kotlin/
+*.iml
+.idea/
+.cxx/
+*.apk
+*.aab
+.DS_Store

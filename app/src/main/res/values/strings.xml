@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mes contacts</string>
+    <string name="titre_liste">Mes contacts</string>
+    <string name="titre_detail">Détail du contact</string>
+
+    <string name="nom_complet_format">%1$s %2$s</string>
+    <string name="desc_photo">Photo du contact</string>
+
+    <string name="label_nom">Nom</string>
+    <string name="label_prenom">Prénom</string>
+    <string name="label_telephone">Téléphone</string>
+    <string name="label_email">E-mail</string>
+
+    <string name="btn_appeler">Appeler</string>
+    <string name="btn_email">Envoyer un e-mail</string>
+    <string name="btn_galerie">Choisir une photo</string>
+    <string name="btn_camera">Prendre une photo</string>
+    <string name="btn_enregistrer">Enregistrer</string>
+    <string name="btn_annuler">Annuler</string>
+
+    <string name="erreur_champ_obligatoire">Ce champ est obligatoire</string>
+    <string name="erreur_telephone_invalide">Numéro de téléphone invalide</string>
+    <string name="erreur_email_invalide">Adresse e-mail invalide</string>
+
+    <string name="msg_contact_enregistre">Contact enregistré</string>
+    <string name="msg_aucune_application">Aucune application compatible n\'est installée</string>
+    <string name="msg_photo_annulee">Aucune photo sélectionnée : la photo actuelle est conservée</string>
+    <string name="msg_photo_illisible">Impossible de lire cette photo</string>
+    <string name="msg_camera_refusee">Autorisation de la caméra refusée</string>
+    <string name="msg_camera_indisponible">Aucune caméra n\'est disponible sur cet appareil</string>
+</resources>
